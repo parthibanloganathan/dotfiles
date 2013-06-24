@@ -18,12 +18,14 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # Navigation
-# General
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias -- -="cd -"
+
+# General
+alias cl='clear'
 
 # Shared folder
 alias sh='cd /media/Windows'
