@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-Dot files for Linux
+Dot files
