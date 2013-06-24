@@ -1,0 +1,11 @@
+[user]
+	name = Parthiban Loganathan
+	email = pl2487@columbia.edu
+[core]
+	editor = vim
+[alias]
+        pom = push origin master
+        co = checkout
+        ci = commit
+        br = branch
+        st = status
