@@ -37,8 +37,16 @@ alias p='cd /home/parthi/Documents/Projects'
 alias gvim='UBUNTU_MENUPROXY= gvim'
 
 # Temporary
+
 # Sailtru Board
 alias tv='cd /home/parthi/Documents/Projects/Sailthru/sailthru_board'
 
 # Sailthru/mobile/SDK/android
 alias droid='cd /home/parthi/Documents/Projects/Sailthru/mobile/SDK/android/libSailthru/src/sailthru/'
+
+# RFC
+alias rfc='php ~/Docuemnts/Projects/Sailthru/devtools/workflow/rfc.php '
+alias rfc-complete='php ~/Docuemnts/Projects/Sailthru/devtools/workflow/rfc.php --complete '
+alias rfc-review='php ~/Documents/Projects/Sailthru/devtools/workflow/rfc.php --review '
+
+alias sshqa='ssh evgate'
