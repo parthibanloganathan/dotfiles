@@ -45,8 +45,18 @@ alias tv='cd /home/parthi/Documents/Projects/Sailthru/sailthru_board'
 alias droid='cd /home/parthi/Documents/Projects/Sailthru/mobile/SDK/android/libSailthru/src/sailthru/'
 
 # RFC
-alias rfc='php ~/Docuemnts/Projects/Sailthru/devtools/workflow/rfc.php '
-alias rfc-complete='php ~/Docuemnts/Projects/Sailthru/devtools/workflow/rfc.php --complete '
-alias rfc-review='php ~/Documents/Projects/Sailthru/devtools/workflow/rfc.php --review '
+DEV_HOME='~/Documents/Projects/Sailthru/'
 
-alias sshqa='ssh evgate'
+# workflow
+alias create="php $DEV_HOME/devtools/workflow/create.php"
+alias pullreq="php $DEV_HOME/devtools/workflow/pullreq.php"
+alias complete="php $DEV_HOME/devtools/workflow/complete.php"
+alias release="php $DEV_HOME/devtools/workflow/release.php"
+alias git-branch="php $DEV_HOME/devtools/workflow/git-branch.php"
+
+# Supplementary 
+alias rfc="php $DEV_HOME/devtools/workflow/rfc.php"
+alias rfc-review="php $DEV_HOME/devtools/workflow/rfc.php --review $1"
+alias rfc-complete="php $DEV_HOME/devtools/workflow/rfc.php --complete $1"
+
+alias sshqa="ssh evgate"
