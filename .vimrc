@@ -142,3 +142,14 @@ else
     set columns=100
   endif
 endif
+
+"------------------------------------------------------------
+" Function and command to use 4 space indentation
+fun! UseTab4()
+  echo "Tab set to 4 spaces"
+  set shiftwidth=4
+  set softtabstop=4
+  set expandtab
+endfunction
+
+command ST call UseTab4()
