@@ -24,6 +24,9 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias -- -="cd -"
 
+# Recycle Bin. Expects recycle.sh to be in /usr/local/bin
+alias rm='recycle.sh'
+
 # General
 alias cl='clear'
 
