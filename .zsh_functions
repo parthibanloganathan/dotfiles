@@ -4,13 +4,6 @@ toplevel()
   cd `git rev-parse --show-toplevel`
 }
 
-# function to open directory and display contents
-cdl()
-{
-  cd $1
-  ls
-}
-
 # function to mount shared folder in /media/Windows
 mw()
 {
