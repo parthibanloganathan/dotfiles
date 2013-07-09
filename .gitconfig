@@ -10,3 +10,5 @@
         br = branch
         st = status
         rb = rebase -i
+[color]
+	ui = true
