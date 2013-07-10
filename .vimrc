@@ -144,6 +144,10 @@ else
 endif
 
 "------------------------------------------------------------
+" Syntastic plugin
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_signs=1
+
 " Function and command to use 4 space indentation
 fun! UseTab4()
   echo "Tab set to 4 spaces"
@@ -153,3 +157,29 @@ fun! UseTab4()
 endfunction
 
 command ST call UseTab4()
+
+"-----------------------------------------------------------
+" Vundle
+ set nocompatible               " be iMproved
+ filetype off                   " required!
+
+ " Setting up Vundle - the vim plugin bundler
+ let hasVundle=1
+ let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
+ if !filereadable(vundle_readme)
+   silent !mkdir -p ~/.vim/bundle
+   silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+   let hasVundle=0
+ endif
+ set rtp+=~/.vim/bundle/vundle/
+ call vundle#rc()
+ Bundle 'gmarik/vundle'
+
+ " Bundles here:
+ Bundle 'Syntastic'
+
+ if hasVundle == 0
+   :BundleInstall
+ endif
+
+ filetype plugin indent on     " required!
