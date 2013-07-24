@@ -31,21 +31,18 @@ alias rm='recycle.sh'
 alias cl='clear'
 
 # Shared folder
-alias sh='cd /media/Windows'
+alias cdsh='cd /media/Windows'
 
 # Projects
-alias p='cd /home/parthi/Documents/Projects'
+alias cdp='cd /home/parthi/Documents/Projects'
 
 # Force gvim to not use Ubuntu menu
 alias gvim='UBUNTU_MENUPROXY= gvim'
 
 # Temporary
 
-# Sailtru Board
-alias tv='cd /home/parthi/Documents/Projects/Sailthru/sailthru_board'
-
 # Sailthru/mobile/SDK/android
-alias droid='cd /home/parthi/Documents/Projects/Sailthru/mobile/SDK/android/libSailthru/src/sailthru/'
+alias cddroid='cd /home/parthi/Documents/Projects/Sailthru/mobile/SDK/android/libSailthru/src/sailthru/'
 
 # RFC
 DEV_HOME='~/Documents/Projects/Sailthru/'
@@ -63,3 +60,4 @@ alias rfc-review="php $DEV_HOME/devtools/workflow/rfc.php --review $1"
 alias rfc-complete="php $DEV_HOME/devtools/workflow/rfc.php --complete $1"
 
 alias sshqa="ssh evgate"
+alias sshds="ssh sailthruDS@ec2-54-242-171-148.compute-1.amazonaws.com"
