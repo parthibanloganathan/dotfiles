@@ -49,4 +49,4 @@ alias rfc='php ~/Docuemnts/Projects/Sailthru/devtools/workflow/rfc.php '
 alias rfc-complete='php ~/Docuemnts/Projects/Sailthru/devtools/workflow/rfc.php --complete '
 alias rfc-review='php ~/Documents/Projects/Sailthru/devtools/workflow/rfc.php --review '
 
-alias sshqa='ssh evgate'
+alias sshev='ssh evgate'
