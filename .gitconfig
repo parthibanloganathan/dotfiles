@@ -4,9 +4,9 @@
 [core]
 	editor = vim
 [alias]
-        pom = push origin master
+        po = push origin 
         co = checkout
-        ci = commit
+        cm = commit
         br = branch
         st = status
         rb = rebase -i
