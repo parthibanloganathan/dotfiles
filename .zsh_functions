@@ -1,23 +1,18 @@
+# GitHub Functions
+
 # Function to go to top level of git project
 toplevel()
 {
   cd `git rev-parse --show-toplevel`
 }
 
-# Function to open directory and display contents
-cdl()
+# Function to git clone a repo using SSH instead of HTTPS
+gitcl()
 {
-  cd $1
-  ls
+  git clone git@github.com:$1
 }
 
-# Function to mount shared folder in /media/Windows/
-mw()
-{
-  sudo mount -t vboxsf $1 /media/Windows
-}
-
-# C/C++
+# Valgrind
 
 # Function to run Valgrind check
 vg()
@@ -31,7 +26,14 @@ vgf()
   valgrind --leack-check=full -v $1
 }
 
+# Function to mount shared folder in /media/Windows/
+mw()
+{
+  sudo mount -t vboxsf $1 /media/Windows
+}
+
 # Temporary Functions
+
 # function to copy libSailthru from shared folder sailthru to git repo
 cpsgl()
 {
@@ -58,18 +60,4 @@ cpgsa()
 {
   rm -rf /media/Windows/test
   cp -r /home/parthi/Documents/Projects/Sailthru/testSailthru/test /media/Windows/test
-}
-
-# function to go to sailthru board
-cdsb()
-{
-  cd ~/Documents/Projects/Sailthru/sailthru_board
-}
-
-# function to sync fork of sailthru_board
-stv()
-{
-  cd ~/Documents/Projects/Sailthru/Sailthru_TV/sailthru_board
-  git pull upstream master
-  git push origin master
 }
