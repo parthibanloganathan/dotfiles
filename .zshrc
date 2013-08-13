@@ -61,8 +61,8 @@ if [ -f ~/.zsh_aliases ]; then
 fi
 
 # Rails
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # For rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
