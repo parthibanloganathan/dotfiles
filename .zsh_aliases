@@ -28,6 +28,7 @@ alias cdd='cd ~/dev'
 
 # Recycle Bin. Expects recycle.sh to be in /usr/local/bin
 alias rm='~/scripts/recycle.sh'
+alias rmv='rm'
 
 # General
 alias cl='clear'
@@ -62,4 +63,4 @@ alias rfc-review="php $DEV_HOME/devtools/workflow/rfc.php --review $1"
 alias rfc-complete="php $DEV_HOME/devtools/workflow/rfc.php --complete $1"
 
 alias sshev="ssh evgate"
-alias sshds="ssh sailthruDS@ec2-54-242-171-148.compute-1.amazonaws.com"
+alias sshds="ssh sailthruDS@ec2-54-242-171-148.compute-1.amazonaws.com -X"
