@@ -33,9 +33,6 @@ alias rmv='rm'
 # General
 alias cl='clear'
 
-# Shared folder
-alias cdsh='cd /media/Windows'
-
 # Force gvim to not use Ubuntu menu
 alias gvim='UBUNTU_MENUPROXY= gvim'
 
@@ -44,11 +41,11 @@ alias gvim='UBUNTU_MENUPROXY= gvim'
 
 # Temporary
 
-# Sailthru/mobile/SDK/android
-alias cddroid='cd ~/dev/sailthru/mobile/SDK/android/libSailthru/src/sailthru/'
-
 # RFC
 DEV_HOME='~/dev/sailthru'
+
+# Sailthru/mobile/SDK/android
+alias cddroid="cd $DEV_HOME/mobile/SDK/android/libSailthru/src/sailthru/"
 
 # workflow
 alias create="php $DEV_HOME/devtools/workflow/create.php"

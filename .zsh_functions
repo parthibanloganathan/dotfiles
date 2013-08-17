@@ -26,10 +26,10 @@ vgf()
   valgrind --leack-check=full -v $1
 }
 
-# Function to mount shared folder in /media/Windows/
+# Function to mount shared folder to ~/host
 mw()
 {
-  sudo mount -t vboxsf $1 /media/Windows
+  sudo mount -t vboxsf $1 ~/host
 }
 
 # Temporary Functions
