@@ -26,8 +26,9 @@ alias -- -='cd -'
 
 alias cdd='cd ~/dev'
 
-# Recycle Bin. Expects recycle.sh to be in /usr/local/bin
-alias rm='~/scripts/recycle.sh'
+# Move to trash instead of deleting
+# Requires trash-cli from https://github.com/andreafrancia/trash-cli
+alias rm='trash-put'
 
 # General
 alias cl='clear'
