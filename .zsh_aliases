@@ -61,4 +61,4 @@ alias rfc-review="php $DEV_HOME/devtools/workflow/rfc.php --review $1"
 alias rfc-complete="php $DEV_HOME/devtools/workflow/rfc.php --complete $1"
 
 alias sshev="ssh evgate"
-alias sshds="ssh sailthruDS@ec2-54-242-171-148.compute-1.amazonaws.com -X"
+alias sshds="ssh sailthruDS@ec2-54-242-171-148.compute-1.amazonaws.com -X -A"
