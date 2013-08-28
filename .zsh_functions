@@ -31,36 +31,3 @@ mw()
 {
   sudo mount -t vboxsf $1 ~/host
 }
-
-# Temporary Functions
-
-SRC=~/host
-DEV=~/dev/sailthru
-
-# function to copy libSailthru from shared folder sailthru to git repo
-cpsgl()
-{
-  trash-put $DEV/mobile/SDK/android/libSailthru
-  cp -r $SRC/libSailthru $DEV/mobile/SDK/android/libSailthru
-}
-
-# function to copy libSailthru from git repo to shared folder
-cpgsl()
-{
-  trash-put $SRC/libSailthru
-  cp -r $DEV/mobile/SDK/android/libSailthru $SRC/libSailthru
-}
-
-# function to copy test from shared folder sailthru to git repo
-cpsga()
-{
-  trash-put $DEV/testSailthru/test
-  cp -r $SRC/test $DEV/testSailthru
-}
-
-# function to copy testSailthru from git repo to shared folder
-cpgsa()
-{
-  trash-put $SRC/test
-  cp -r $DEV/testSailthru/test $SRC/test
-}
