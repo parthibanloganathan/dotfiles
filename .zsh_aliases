@@ -39,26 +39,3 @@ alias gvim='UBUNTU_MENUPROXY= gvim'
 
 # Matrix
  alias matrix='echo -ne "\e[32m" ; while true ; do echo -ne "\e[$(($RANDOM % 2 + 1))m" ; tr -c "[:print:]" " " < /dev/urandom | dd count=1 bs=50 2> /dev/null ; done'
-
-# Temporary
-
-# RFC
-DEV_HOME='~/dev/sailthru'
-
-# Sailthru/mobile/SDK/android
-alias cddroid="cd $DEV_HOME/mobile/SDK/android/libSailthru/src/sailthru/"
-
-# workflow
-alias create="php $DEV_HOME/devtools/workflow/create.php"
-alias pullreq="php $DEV_HOME/devtools/workflow/pullreq.php"
-alias complete="php $DEV_HOME/devtools/workflow/complete.php"
-alias release="php $DEV_HOME/devtools/workflow/release.php"
-alias git-branch="php $DEV_HOME/devtools/workflow/git-branch.php"
-
-# Supplementary 
-alias rfc="php $DEV_HOME/devtools/workflow/rfc.php"
-alias rfc-review="php $DEV_HOME/devtools/workflow/rfc.php --review $1"
-alias rfc-complete="php $DEV_HOME/devtools/workflow/rfc.php --complete $1"
-
-alias sshev="ssh evgate"
-alias sshds="ssh sailthruDS@ec2-54-242-171-148.compute-1.amazonaws.com -X -A"
