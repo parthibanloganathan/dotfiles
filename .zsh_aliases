@@ -26,19 +26,9 @@ alias -- -='cd -'
 
 alias cdd='cd ~/dev'
 
-# Move to trash instead of deleting
-# Requires trash-cli from https://github.com/andreafrancia/trash-cli
-alias rm='trash-put'
-
 # General
 alias cl='clear'
 alias lo='logout'
-
-# Force gvim to not use Ubuntu menu
-#alias gvim='UBUNTU_MENUPROXY= gvim'
-
-# Matrix
- alias matrix='echo -ne "\e[32m" ; while true ; do echo -ne "\e[$(($RANDOM % 2 + 1))m" ; tr -c "[:print:]" " " < /dev/urandom | dd count=1 bs=50 2> /dev/null ; done'
 
 # SSH into CUNIX
 alias sshcunix='ssh pl2487@cunix.cc.columbia.edu -X'
