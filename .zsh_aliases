@@ -30,5 +30,8 @@ alias cdd='cd ~/dev'
 alias cl='clear'
 alias lo='logout'
 
+# Trash using http://hasseg.org/trash/
+alias rmv='trash'
+
 # SSH into CUNIX
 alias sshcunix='ssh pl2487@cunix.cc.columbia.edu -X'
