@@ -136,7 +136,7 @@ if has("gui_running")
 else
   " This is console Vim.
   if exists("+lines")
-    set lines=50
+    " set lines=50
   endif
   if exists("+columns")
     set columns=100
