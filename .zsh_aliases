@@ -36,3 +36,6 @@ alias rmv='trash'
 # SSH into CUNIX
 alias sshcunix='ssh pl2487@cunix.cc.columbia.edu -X'
 alias sshcourses='ssh ubuntu@db.data.adicu.com -X'
+
+# Coursera
+alias cc='cd dev/coursera'
