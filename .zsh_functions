@@ -1,7 +1,7 @@
 # GitHub Functions
 
 # Function to go to top level of git project
-toplevel()
+top()
 {
   cd `git rev-parse --show-toplevel`
 }
@@ -26,8 +26,29 @@ vgf()
   valgrind --leack-check=full -v $1
 }
 
-# Function to mount shared folder to ~/host
-mw()
+# Function to create new branch from ticket for Coursera Android
+# Usage: courticket TICKET_NUMBER COURSERA-ANDROID_BRANCH COURKIT_BRANCH
+courticket()
 {
-  sudo mount -t vboxsf $1 ~/host
+  local COURPATH=~/dev/coursera/coursera-android # path of repo
+  local KEYSPATH=~/dev/coursera/keys # path of keys to copy
+  cd COURPATH
+  git fetch origin
+  git checkout -b $1 origin/$2
+  cd courkit
+  git fetch origin
+  git checkout origin/$3
+  cd KEYSPATH
+  cp keys.xml ../coursera-android/courkit/src/main/res/values/
+  cd COURPATH
+}
+
+# Function to clone Coursera Android repository
+courclone()
+{
+  cd ~/dev/coursera # path where you want to clone repo
+  git clone git@github.com:webedx-spark/coursera-android.git
+  cd coursera-android
+  git clone git@github.com:webedx-spark/courkit-android.git
+  mv courkit-android courkit
 }
