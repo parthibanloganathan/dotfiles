@@ -30,9 +30,15 @@ alias cdd='cd ~/dev'
 alias cl='clear'
 alias lo='logout'
 
+# Use Homebrew versions
+alias vim='/usr/local/bin/vim'
+alias git='/usr/local/bin/git'
+
 # Trash using http://hasseg.org/trash/
 alias rmv='trash'
 
 # SSH into CUNIX
 alias sshcunix='ssh pl2487@cunix.cc.columbia.edu -X'
+
+# SSH into Courses
 alias sshcourses='ssh ubuntu@db.data.adicu.com -X'
