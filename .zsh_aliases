@@ -42,3 +42,6 @@ alias sshcunix='ssh pl2487@cunix.cc.columbia.edu -X'
 
 # SSH into Courses
 alias sshcourses='ssh ubuntu@db.data.adicu.com -X'
+
+# Coursera
+alias cc='cd ~/dev/coursera'
