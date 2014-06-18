@@ -39,7 +39,7 @@ courticket()
   git fetch origin
   git checkout origin/$3
   cd KEYSPATH
-  cp keys.xml ../coursera-android/courkit/src/main/res/values/
+  cp Keys.java ../coursera-android/courkit/src/main/java/org/coursera/courkit/
   cd COURPATH
 }
 
