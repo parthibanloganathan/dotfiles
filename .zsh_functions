@@ -27,17 +27,21 @@ vgf()
 }
 
 # Function to create new branch from ticket for Coursera Android
-# Usage: courticket TICKET_NUMBER COURSERA-ANDROID_BRANCH COURKIT_BRANCH
+# Usage: courticket TICKET_NUMBER
 courticket()
 {
   local COURPATH=~/dev/coursera/coursera-android # path of repo
   local KEYSPATH=~/dev/coursera/keys # path of keys to copy
   cd COURPATH
-  git fetch origin
-  git checkout -b $1 origin/$2
+  git fetch --all
+  git checkout master
+  git pull origin master
+  git checkout -b $1
   cd KEYSPATH
   cp Keys.java ../coursera-android/courkit/src/main/java/org/coursera/courkit/
   cd COURPATH
+  git submodule init
+  git submodule update
 }
 
 # Function to clone Coursera Android repository
@@ -46,6 +50,15 @@ courclone()
   cd ~/dev/coursera # path where you want to clone repo
   git clone git@github.com:webedx-spark/coursera-android.git
   cd coursera-android
-  git clone git@github.com:webedx-spark/courkit-android.git
-  mv courkit-android courkit
+}
+
+# Arcanist land
+# Usage: arland TICKET_NUMBER
+arcland()
+{
+  cd ~/dev/coursera/coursera-android
+  git checkout master
+  git reset --hard origin/master
+  git checkout $1
+  arc land
 }
