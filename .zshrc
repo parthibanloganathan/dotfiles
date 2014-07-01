@@ -67,5 +67,8 @@ eval "$(rbenv init -)"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# For android
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
 # For arcanist
 export PATH="/Users/parthiban/dev/coursera/deploy/arcanist/bin:$PATH"
