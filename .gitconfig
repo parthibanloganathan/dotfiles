@@ -6,9 +6,9 @@
 [alias]
         po = push origin 
         co = checkout
-        cm = commit
+        cm = commit -m
         br = branch
         st = status
-        rb = rebase -i
+        rb = rebase -i HEAD~2
 [color]
 	ui = true
