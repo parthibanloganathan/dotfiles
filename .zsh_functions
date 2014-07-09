@@ -53,10 +53,11 @@ courclone()
 }
 
 # Arcanist land
-# Usage: arland TICKET_NUMBER
+# Usage: arcland TICKET_NUMBER
 arcland()
 {
-  cd ~/dev/coursera/coursera-android
+  local COURPATH=~/dev/coursera/coursera-android # path of repo  
+  cd COURPATH
   git checkout master
   git reset --hard origin/master
   git checkout $1
