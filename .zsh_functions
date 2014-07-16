@@ -63,3 +63,12 @@ arcland()
   git checkout $1
   arc land
 }
+
+# Delete remote branch and push local
+forcepush()
+{
+  local COURPATH=~/dev/coursera/coursera-android # path of repo  
+  cd COURPATH
+  git push origin $1 --delete
+  git push origin $1
+}
