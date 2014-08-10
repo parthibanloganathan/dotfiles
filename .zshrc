@@ -71,4 +71,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # For arcanist
-export PATH="/Users/parthiban/dev/coursera/deploy/arcanist/bin:$PATH"
+export PATH="~/dev/coursera/deploy/arcanist/bin:$PATH"
