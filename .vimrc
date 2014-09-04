@@ -178,6 +178,9 @@ command ST call UseTab4()
  " Bundles here:
  Bundle 'Syntastic'
  Bundle 'kchmck/vim-coffee-script'
+ Bundle 'Shougo/neocomplete'
+ Bundle 'Shougo/neosnippet'
+ Bundle 'Shougo/neosnippet-snippets'
 
  if hasVundle == 0
    :BundleInstall

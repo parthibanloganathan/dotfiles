@@ -37,11 +37,13 @@ alias git='/usr/local/bin/git'
 # Trash using http://hasseg.org/trash/
 alias rmv='trash'
 
-# SSH into CUNIX
+# SSH
+# CUNIX
 alias sshcunix='ssh pl2487@cunix.cc.columbia.edu -X'
-
-# SSH into Courses
+# Courses
 alias sshcourses='ssh ubuntu@db.data.adicu.com -X'
+# Digital Ocean quark
+alias sshquark='ssh root@104.131.9.37 -X'
 
 # Coursera
 alias cc='cd ~/dev/coursera/coursera-android'
