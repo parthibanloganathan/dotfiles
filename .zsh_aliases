@@ -40,6 +40,8 @@ alias rmv='trash'
 # SSH
 # CUNIX
 alias sshcunix='ssh pl2487@cunix.cc.columbia.edu -X'
+# CLIC
+alias sshclic='ssh pl2487@clic.cs.columbia.edu -X'
 # Courses
 alias sshcourses='ssh ubuntu@db.data.adicu.com -X'
 # Digital Ocean quark
