@@ -46,6 +46,3 @@ alias sshclic='ssh pl2487@clic.cs.columbia.edu -X'
 alias sshcourses='ssh ubuntu@db.data.adicu.com -X'
 # Digital Ocean quark
 alias sshquark='ssh root@104.131.43.213 -X'
-
-# Coursera
-alias cc='cd ~/dev/coursera/coursera-android'
