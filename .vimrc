@@ -120,6 +120,8 @@ map Y y$
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
+" Map CMD+n to auto-complete in MacVim
+inoremap <D-N> <C-N>
 
 "------------------------------------------------------------
 " Set default colorscheme
