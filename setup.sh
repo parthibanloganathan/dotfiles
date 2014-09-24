@@ -4,10 +4,11 @@ echo "Symlinking to files in $DIRECTORY"
 cd ~
 ln -s $DIRECTORY/.zshrc
 ln -s $DIRECTORY/.zsh_aliases
-ln -s $DIRECTORY/.zshr_functions
+ln -s $DIRECTORY/.zsh_functions
 ln -s $DIRECTORY/.vimrc
 ln -s $DIRECTORY/.tmux.conf
 ln -s $DIRECTORY/.gitconfig
+ln -s $DIRECTORY/.gitignore
 
 # Install ohmyzsh
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
