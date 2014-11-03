@@ -26,6 +26,9 @@ alias -- -='cd -'
 
 alias cdd='cd ~/dev'
 
+# Search
+alias sfind='find . -name'
+
 # General
 alias cl='clear'
 alias lo='logout'
