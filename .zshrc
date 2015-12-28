@@ -67,8 +67,5 @@ eval "$(rbenv init -)"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# For android
-export ANDROID_HOME=/usr/local/opt/android-sdk
-
 # OPAM configuration
 . /Users/parthi/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
