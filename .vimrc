@@ -24,12 +24,24 @@ Plugin 'scrooloose/syntastic'
 " Neocomplete https://github.com/Shougo/neocomplete.vim
 Plugin 'Shougo/neocomplete.vim'
 
+"Javascript Stuff
+" Vim javascript https://github.com/jelera/vim-javascript-syntax
+Plugin 'jelera/vim-javascript-syntax'
+
 " Vim javascript https://github.com/pangloss/vim-javascript
 Plugin 'pangloss/vim-javascript'
 
-" Vim javascript https://github.com/maksimr/vim-jsbeautify
-Plugin 'maksimr/vim-jsbeautify'
-Plugin 'einars/js-beautify'
+" Vim indenting https://github.com/nathanaelkane/vim-indent-guides
+Plugin 'nathanaelkane/vim-indent-guides'
+
+" Complete brackets https://github.com/Raimondi/delimitMate
+Plugin 'Raimondi/delimitMate'
+
+" Complete text https://github.com/Valloric/YouCompleteMe
+Plugin 'Valloric/YouCompleteMe'
+
+" JavaScript specific completion for YouCompleteMe https://github.com/ternjs/tern_for_vim
+Plugin 'marijnh/tern_for_vim'
 
 " Directory tree https://github.com/scrooloose/nerdtree
 Plugin 'scrooloose/nerdtree'
@@ -208,6 +220,13 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 "------------------------------------------------------------
+" YouCompleteMe
+" 
+let g:ycm_add_preview_to_completeopt=0
+let g:ycm_confirm_extra_conf=0
+set completeopt-=preview
+
+"------------------------------------------------------------
 " Neocomplete
 "
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
@@ -293,3 +312,10 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+
+"------------------------------------------------------------
+" NERDTree
+"
+let mapleader = ","
+nmap <leader>nt :NERDTreeFocus<cr>
