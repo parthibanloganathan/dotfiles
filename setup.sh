@@ -10,6 +10,9 @@ ln -s $DIRECTORY/.tmux.conf
 ln -s $DIRECTORY/.gitconfig
 ln -s $DIRECTORY/.gitignore
 
+# Install vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 # Install ohmyzsh
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 cp $DIRECTORY/parthi1.zsh-theme ~/.oh-my-zsh/themes/
