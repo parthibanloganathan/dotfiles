@@ -59,13 +59,3 @@ fi
 if [ -f ~/.zsh_aliases ]; then
     . ~/.zsh_aliases
 fi
-
-# For rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# OPAM configuration
-. /Users/parthi/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

@@ -34,6 +34,7 @@ alias cl='clear'
 alias lo='logout'
 
 # Use Homebrew versions
+alias python='/usr/local/bin/python'
 alias vim='/usr/local/bin/vim'
 alias git='/usr/local/bin/git'
 
