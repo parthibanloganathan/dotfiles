@@ -21,9 +21,6 @@ Plugin 'gmarik/Vundle.vim'
 " Syntastic https://github.com/scrooloose/syntastic
 Plugin 'scrooloose/syntastic'
 
-" Neocomplete https://github.com/Shougo/neocomplete.vim
-Plugin 'Shougo/neocomplete.vim'
-
 "Javascript Stuff
 " Vim javascript https://github.com/jelera/vim-javascript-syntax
 Plugin 'jelera/vim-javascript-syntax'

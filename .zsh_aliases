@@ -42,9 +42,3 @@ alias git='/usr/local/bin/git'
 alias rmv='trash'
 
 # SSH
-# CUNIX
-alias sshcunix='ssh pl2487@cunix.cc.columbia.edu -X'
-# CLIC
-alias sshclic='ssh pl2487@clic.cs.columbia.edu -X'
-# Digital Ocean quark
-alias sshquark='ssh root@206.189.219.242 -X'
